@@ -1,0 +1,84 @@
+<html>
+<title>EdsonProfile</title>
+<meta name="viewport" content="device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<style type="text/css">
+body{
+  
+  background: url(1.jpg)   ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #464646;
+  
+
+}
+.w3-cover{
+  z-index: 10000;
+  font-size:100px;
+  text-align:center;
+  position: absolute;
+  width: 20%;
+  padding-top: 100px;
+  color: white;
+  font-family: 'Lato';
+}
+
+
+h3 {
+  font-family: Alias;
+}
+</style>
+<div id="mySidenav" class="sidenav">
+  <a href="index.html" id="home" class="w3-text-black" ><h4 class=" w3-text-pink"><b>Home</h4></a>
+  <a href="index2.html" id="about" class="w3-text-black"><h4 class=" w3-text-pink"><b>About</h4></a>
+  <a href="index3.html" id="interest" class="w3-text-black"><h4 class=" w3-text-pink"><b>Gallery</h4></a>
+</div>
+
+<body>
+<body>
+  <audio autoplay loop>
+      <source src="audio2.mp3">
+</audio>
+<script language="JavaScript">
+
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+  
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+ 
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+ 
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+     
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+     
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script>
+</body>
+</html>
